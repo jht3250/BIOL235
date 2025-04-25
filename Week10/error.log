@@ -1,0 +1,55 @@
+geneticDriftOMPHW.cpp:87:36: error: ‘totalHet’ was not declared in this scope; did you mean ‘totalorder’?
+   87 |     double averageHeterozygosity = totalHet / P;
+      |                                    ^~~~~~~~
+      |                                    totalorder
+geneticDriftOMPHW.cpp:87:47: error: ‘P’ was not declared in this scope
+   87 |     double averageHeterozygosity = totalHet / P;
+      |                                               ^
+geneticDriftOMPHW.cpp:90:5: error: ‘totalHeterozygosity’ does not name a type; did you mean ‘averageHeterozygosity’?
+   90 |     totalHeterozygosity = totalAlleles / (N * P);
+      |     ^~~~~~~~~~~~~~~~~~~
+      |     averageHeterozygosity
+geneticDriftOMPHW.cpp:93:19: error: ‘totalHeterozygosity’ was not declared in this scope; did you mean ‘averageHeterozygosity’?
+   93 |     double Fst = (totalHeterozygosity - averageHeterozygosity) / totalHeterozygosity;
+      |                   ^~~~~~~~~~~~~~~~~~~
+      |                   averageHeterozygosity
+geneticDriftOMPHW.cpp:93:66: error: ‘totalHeterozygosity’ was not declared in this scope; did you mean ‘averageHeterozygosity’?
+   93 |     double Fst = (totalHeterozygosity - averageHeterozygosity) / totalHeterozygosity;
+      |                                                                  ^~~~~~~~~~~~~~~~~~~
+      |                                                                  averageHeterozygosity
+geneticDriftOMPHW.cpp:96:5: error: expected unqualified-id before ‘for’
+   96 |     for (int i = 0; i < P; i++) {
+      |     ^~~
+geneticDriftOMPHW.cpp:96:21: error: ‘i’ does not name a type
+   96 |     for (int i = 0; i < P; i++) {
+      |                     ^
+geneticDriftOMPHW.cpp:96:28: error: ‘i’ does not name a type
+   96 |     for (int i = 0; i < P; i++) {
+      |                            ^
+geneticDriftOMPHW.cpp:101:10: error: ‘cout’ in namespace ‘std’ does not name a type
+  101 |     std::cout << "Average Heterozygosity:\t" << averageHeterozygosity << std::endl;
+      |          ^~~~
+In file included from geneticDriftOMPHW.cpp:6:
+/usr/include/c++/9/iostream:61:18: note: ‘std::cout’ declared here
+   61 |   extern ostream cout;  /// Linked to standard output
+      |                  ^~~~
+geneticDriftOMPHW.cpp:102:10: error: ‘cout’ in namespace ‘std’ does not name a type
+  102 |     std::cout << "Total Heterozygosity:\t" << totalHeterozygosity << std::endl;
+      |          ^~~~
+In file included from geneticDriftOMPHW.cpp:6:
+/usr/include/c++/9/iostream:61:18: note: ‘std::cout’ declared here
+   61 |   extern ostream cout;  /// Linked to standard output
+      |                  ^~~~
+geneticDriftOMPHW.cpp:103:10: error: ‘cout’ in namespace ‘std’ does not name a type
+  103 |     std::cout << "Fst:\t" << Fst << std::endl;
+      |          ^~~~
+In file included from geneticDriftOMPHW.cpp:6:
+/usr/include/c++/9/iostream:61:18: note: ‘std::cout’ declared here
+   61 |   extern ostream cout;  /// Linked to standard output
+      |                  ^~~~
+geneticDriftOMPHW.cpp:105:5: error: expected unqualified-id before ‘return’
+  105 |     return 0;
+      |     ^~~~~~
+geneticDriftOMPHW.cpp:106:1: error: expected declaration before ‘}’ token
+  106 | }
+      | ^
